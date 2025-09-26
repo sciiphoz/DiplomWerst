@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Редактирование товара</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="#">Логотип</a>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+                <li><a href="logout.html">Выйти</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <div class="edit-product-form">
+        <h1>Редактировать товар</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+
+            <label for="name">Название товара</label>
+            <input type="text" id="name" name="name" value="Текущий товар" required>
+
+            <label for="description">Описание</label>
+            <textarea id="description" name="description" rows="4" required>Текущее описание товара</textarea>
+
+            <label for="price">Цена</label>
+            <input type="number" id="price" name="price" step="0.01" value="123.45" required>
+
+            <label for="image">Фото (загрузите новое, если хотите изменить)</label>
+            <input type="file" id="image" name="image" accept="image/*">
+
+            <!-- Отображение текущего изображения -->
+            <div class="current-image">
+                <p>Текущее изображение:</p>
+                <img src="https://imgholder.ru/250x180/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson" alt="Текущая фотография товара" class="product-image-preview">
+            </div>
+
+            <button type="submit" class="button">Сохранить изменения</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

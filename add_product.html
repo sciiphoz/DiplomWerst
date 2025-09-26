@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Добавление товара</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="#">Логотип</a>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+                <li><a href="logout.html">Выйти</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <div class="add-product-form">
+        <h1>Добавить товар</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+            <label for="name">Название товара</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="description">Описание</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="price">Цена</label>
+            <input type="number" id="price" name="price" step="0.01" required>
+
+            <label for="image">Фото</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <button type="submit" class="button">Добавить товар</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
