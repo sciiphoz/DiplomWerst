@@ -158,9 +158,8 @@ body {
 }
 
 .logout-button {
-    width: 150px;
     height: max-content;
-    padding: 6px 0px;
+    cursor: pointer;
 }
 
 /* Content */
@@ -350,10 +349,10 @@ body {
 
 /* Контейнер формы регистрации */
 .registration-form {
-    max-width: 400px;
+    max-width: 450px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #2D3748;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -362,14 +361,14 @@ body {
 .registration-form h1 {
     font-size: 1.8em;
     margin-bottom: 20px;
-    color: #333;
+    color: #fff;
 }
 
 /* Стили полей формы */
 .registration-form label {
     display: block;
-    font-weight: bold;
-    color: #555;
+    font-weight: medium;
+    color: #cbcbcb;
     margin-top: 10px;
     text-align: left;
 }
@@ -422,10 +421,10 @@ body {
 
 /* Контейнер формы авторизации */
 .login-form {
-    max-width: 400px;
+    max-width: 450px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #2D3748;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -434,14 +433,13 @@ body {
 .login-form h1 {
     font-size: 1.8em;
     margin-bottom: 20px;
-    color: #333;
+    color: #fff;
 }
 
 /* Стили полей формы */
 .login-form label {
     display: block;
-    font-weight: bold;
-    color: #555;
+    color: #cbcbcb;
     margin-top: 10px;
     text-align: left;
 }
@@ -459,6 +457,7 @@ body {
 
 /* Кнопка отправки формы */
 .button {
+    margin-top: 30px;
     padding: 12px 20px;
     background-color: #0066cc;
     color: #fff;
@@ -736,6 +735,8 @@ body {
     height: max-content;
     padding: 6px 0px;
     align-self: center;
+
+    font: 16px;
 
     margin-bottom: 60px;
 }
