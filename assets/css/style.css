@@ -163,10 +163,17 @@ body {
 }
 
 /* Content */
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .content {
     background-color: #2D3748;
     
-    width: 100%;
+    width: 75%;
     padding: 30px;
 
     display: flex;
@@ -254,16 +261,67 @@ body {
 
 .ui-items .ui-like, .ui-dislike {
     width: 35px;
+    cursor: pointer;
 }
 
 .ui-comment {
     width: 35px;
+    cursor: pointer;
 }
 
 .ui-score {
     font-size: 16px;
     font-weight: bold;
     color: #35B56B;
+}
+
+/* Comment section */
+
+.comment-section {
+    background-color: #2D3748;
+    
+    margin-top: 40px;
+    width: 75%;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.comment-section h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.comment-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.comment-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comment-user {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.comment-user .comment-name {
+    font-size: 20px;
+    color: #fff;
+}
+
+.comment-text {
+    font-size: 20px;
+    color: #fff;
 }
 
 /* Навигация */
