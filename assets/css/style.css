@@ -212,26 +212,27 @@ body {
     width: fit-content;
     padding: 4px 6px;
     
-    font-size: 14px;
-    color: #35B56B;
-    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2D3748;
+    background-color: #35B56B;
     
     border: solid 1px #35B56B;
     border-radius: 4px;
 
     cursor: pointer;
 
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .content-button:hover {
     width: fit-content;
-    padding: 3px 6px;
+    padding: 4px 6px;
     
-    font-size: 14px;
+    font-size: 16px;
 
-    color: #fff;
-    background-color: #35B56B;
+    color: #35B56B;
+    background-color: transparent;
 
     border: solid 1px #35B56B;
     border-radius: 4px;
@@ -754,8 +755,13 @@ body {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     gap: 50px;
+}
+
+.profile hr {
+    width: 75%;
 }
 
 .profile-card {
@@ -765,16 +771,18 @@ body {
     align-items: center;
     justify-content: center;
     align-content: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 .profile-icon {
-    width: 10%;
+    width: 40%;
 }
 
 .profile-info {
     display: flex;
     flex-direction: column;
+
+    margin-top: 20px;
 }
 
 .profile-info p {
@@ -798,8 +806,6 @@ body {
 
     margin-bottom: 60px;
 }
-
-
 
 /* Информация о пользователе */
 .profile-info {
