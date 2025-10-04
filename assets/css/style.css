@@ -122,15 +122,8 @@ body {
     font-family: 'Montserrat-Regular', sans-serif;
     font-size: 1em;
     color: #fff;
-    
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    
-    text-decoration: none;
+
+    cursor: pointer;
 }
 
 .header-logo {
@@ -260,7 +253,7 @@ body {
     gap: 15px;
 }
 
-.ui-items .ui-like, .ui-dislike {
+.ui-items .ui-like, .ui-dislike, .ui-edit {
     width: 35px;
     cursor: pointer;
 }
@@ -444,6 +437,39 @@ body {
     font-size: 1em;
 }
 
+.registration-button {
+    width: fit-content;
+    height: max-content;
+    padding: 10px 20px;
+    align-self: center;
+
+    font-size: 16px;
+    font-weight: bold;
+    color: #242A37;
+    background-color: #35B56B;
+
+    border: solid 1px #35B56B;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.registration-button:hover {
+    padding: 10px 20px;
+    
+    font-size: 16px;
+
+    color: #35B56B;
+    background-color: transparent;
+
+    border: solid 1px #35B56B;
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
 /* Кнопка отправки формы */
 .button {
     padding: 12px 20px;
@@ -514,23 +540,37 @@ body {
     font-size: 1em;
 }
 
-/* Кнопка отправки формы */
-.button {
-    margin-top: 30px;
-    padding: 12px 20px;
-    background-color: #0066cc;
-    color: #fff;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 1em;
+.login-button {
+    width: fit-content;
+    height: max-content;
+    padding: 10px 20px;
+    align-self: center;
+
+    font-size: 16px;
+    font-weight: bold;
+    color: #242A37;
+    background-color: #35B56B;
+
+    border: solid 1px #35B56B;
+    border-radius: 4px;
+
     cursor: pointer;
-    transition: background-color 0.3s;
-    width: 100%;
-    border: none;
+
+    transition: all 0.2s ease-in-out;
 }
 
-.button:hover {
-    background-color: #004999;
+.login-button:hover {
+    padding: 10px 20px;
+    
+    font-size: 16px;
+
+    color: #35B56B;
+    background-color: transparent;
+
+    border: solid 1px #35B56B;
+    border-radius: 4px;
+
+    cursor: pointer;
 }
 
 /* Ссылки на регистрацию и восстановление пароля */
@@ -555,26 +595,24 @@ body {
 
 /* Контейнер формы добавления товара */
 .add-product-form {
-    max-width: 500px;
-    margin: 50px auto;
+    max-width: 75%;
+    margin: auto;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #2D3748;
+    color: #fff;
     text-align: center;
 }
 
 .add-product-form h1 {
     font-size: 1.8em;
     margin-bottom: 20px;
-    color: #333;
+    color: #fff;
 }
 
 /* Стили полей формы */
 .add-product-form label {
     display: block;
-    font-weight: bold;
-    color: #555;
+    color: #fff;
     margin-top: 10px;
     text-align: left;
 }
@@ -592,7 +630,6 @@ body {
     font-size: 1em;
 }
 
-/* Кнопка отправки формы */
 .button {
     padding: 12px 20px;
     background-color: #0066cc;
@@ -608,6 +645,43 @@ body {
 
 .button:hover {
     background-color: #004999;
+}
+
+.material-settings {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+
+    padding-bottom: 20px;
+}
+
+.settings-item {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-item label {
+    margin: 0;
+}
+
+.settings-item select {
+    font-size: 16px;
+    padding: 4px 6px;
+}
+
+
+.settings-item input {
+    width: 20px;
+    height: 20px;
+
+    color: #218838;
 }
 
 /* Контейнер формы редактирования товара */
@@ -758,6 +832,8 @@ body {
     align-items: center;
 
     gap: 50px;
+
+    margin-bottom: 60px;
 }
 
 .profile hr {
@@ -775,23 +851,49 @@ body {
 }
 
 .profile-icon {
-    width: 40%;
+    width: 35%;
 }
 
 .profile-info {
     display: flex;
     flex-direction: column;
-
-    margin-top: 20px;
 }
 
 .profile-info p {
     font-size: 26px;
+    margin-bottom: 0px;
     color: #fff;
 }
 
-.profile-info a {
-    font-size: 20px;
+.logout-button {
+    width: fit-content;
+    height: max-content;
+    padding: 10px 20px;
+    align-self: center;
+
+    font-size: 16px;
+    font-weight: bold;
+    color: #242A37;
+    background-color: #D53737;
+
+    border: solid 1px #D53737;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.logout-button:hover {
+    padding: 10px 20px;
+    
+    font-size: 16px;
+
+    color: #D53737;
+    background-color: transparent;
+
+    border: solid 1px #D53737;
+    border-radius: 4px;
 
     cursor: pointer;
 }
@@ -802,21 +904,64 @@ body {
     padding: 6px 0px;
     align-self: center;
 
-    font: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1A202C;
+    background-color: #35B56B;
 
-    margin-bottom: 60px;
+    border: solid 1px #35B56B;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
 }
 
-/* Информация о пользователе */
-.profile-info {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 20px;
-    text-align: left;
+.create-button:hover {
+    padding: 6px 0px;
+    
+    font-size: 16px;
+
+    color: #35B56B;
+    background-color: transparent;
+
+    border: solid 1px #35B56B;
+    border-radius: 4px;
+
+    cursor: pointer;
 }
 
-.profile-info p {
-    margin-bottom: 10px;
+.end-create-button {
+    width: fit-content;
+    height: max-content;
+    padding: 12px 24px;
+    align-self: center;
+
+    font-size: 16px;
+    font-weight: bold;
+    color: #242A37;
+    background-color: #35B56B;
+
+    border: solid 1px #35B56B;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.end-create-button:hover {
+    padding: 12px 24px;
+    
+    font-size: 16px;
+
+    color: #35B56B;
+    background-color: transparent;
+
+    border: solid 1px #35B56B;
+    border-radius: 4px;
+
+    cursor: pointer;
 }
 
 /* Кнопки управления профилем */
